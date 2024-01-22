@@ -1,0 +1,27 @@
+<suite name="AllTests">
+    <test thread-count="5" name="Test">
+        <classes>
+            <class name="Testing.FirstPageTesting">
+                <methods>
+                    <include name="openLoginAndRigistrationPage"/>
+                    <include name="scrollingDownTesting"/>
+                    <include name="scrollingDownAndUpWithoutArrowTesting"/>
+                    <include name="loggingOut"/>
+                    <include name="openContactingUsPage"/>
+                    <include name="openTestCases"/>
+                    <include name="openProductsPageTesting"/>
+                    <include name="deletingAccount"/>
+
+                </methods>
+            </class>
+            <class name="Testing.NewUserSignUpTesting"/>
+            <class name="Testing.LoginTesting"/>
+            <class name="Testing.ContactUsTesting"/>
+            <class name="Testing.PDPTesting"/>
+            <class name="Testing.PLPTesting"/>
+            <class name="Testing.CartTesting"/>
+
+
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="18" failed="1" skipped="0">
+    <reporter-output>
+    </reporter-output>
+    <suite started-at="2024-01-19T16:28:00 EET" name="AllTests" finished-at="2024-01-19T16:28:56 EET"
+           duration-ms="55822">
+        <groups>
+        </groups>
+        <test started-at="2024-01-19T16:28:00 EET" name="Test" finished-at="2024-01-19T16:28:56 EET"
+              duration-ms="55822">
+            <class name="Testing.FirstPageTesting">
+                <test-method is-config="true" signature="setUp()[pri:0, instance:Testing.FirstPageTesting@2f177a4b]"
+                             started-at="2024-01-19T16:28:00 EET" name="setUp" finished-at="2024-01-19T16:28:15 EET"
+                             duration-ms="15437" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- setUp -->
+                <test-method
+                        signature="openLoginAndRigistrationPage()[pri:0, instance:Testing.FirstPageTesting@2f177a4b]"
+                        started-at="2024-01-19T16:28:15 EET" name="openLoginAndRigistrationPage"
+                        finished-at="2024-01-19T16:28:16 EET" duration-ms="998" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- openLoginAndRigistrationPage -->
+                <test-method signature="loggingOut()[pri:0, instance:Testing.FirstPageTesting@2f177a4b]"
+                             started-at="2024-01-19T16:28:27 EET" name="loggingOut"
+                             finished-at="2024-01-19T16:28:28 EET"
+                             depends-on-methods="Testing.NewUserSignUpTesting.enteringSignUpData" duration-ms="1117"
+                             status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- loggingOut -->
+                <test-method signature="openContactingUsPage()[pri:0, instance:Testing.FirstPageTesting@2f177a4b]"
+                             started-at="2024-01-19T16:28:34 EET" name="openContactingUsPage"
+                             finished-at="2024-01-19T16:28:35 EET"
+                             depends-on-methods="Testing.LoginTesting.signinWithCorrectCredentials" duration-ms="1318"
+                             status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- openContactingUsPage -->
+            </class> <!-- Testing.FirstPageTesting -->
+            <class name="Testing.PLPTesting">
+                <test-method signature="searchTesting()[pri:1, instance:Testing.PLPTesting@56a6d5a6]"
+                             started-at="2024-01-19T16:28:44 EET" name="searchTesting"
+                             finished-at="2024-01-19T16:28:50 EET" duration-ms="6649" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- searchTesting -->
+                <test-method signature="addingElementsToTheCart()[pri:2, instance:Testing.PLPTesting@56a6d5a6]"
+                             started-at="2024-01-19T16:28:50 EET" name="addingElementsToTheCart"
+                             finished-at="2024-01-19T16:28:56 EET" duration-ms="5387" status="FAIL">
+                    <exception class="org.openqa.selenium.InvalidSelectorException">
+                        <message>
+                            <![CDATA[invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.218)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c965aa485582ca0679b4a59df760598, findElement {using=css selector, value=/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49161/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c965aa485582ca0679b4a59df760598]]>
+                        </message>
+                        <full-stacktrace>
+                            <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.218)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c965aa485582ca0679b4a59df760598, findElement {using=css selector, value=/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49161/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c965aa485582ca0679b4a59df760598
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at POM.PLP.hoverOverOnItem(PLP.java:19)
+at Testing.PLPTesting.addingElementsToTheCart(PLPTesting.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+                        </full-stacktrace>
+                    </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- addingElementsToTheCart -->
+            </class> <!-- Testing.PLPTesting -->
+            <class name="Testing.PDPTesting">
+                <test-method signature="openPDPForTheFirstItem()[pri:1, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:40 EET" name="openPDPForTheFirstItem"
+                             finished-at="2024-01-19T16:28:41 EET" duration-ms="695" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- openPDPForTheFirstItem -->
+                <test-method signature="nameIsVisable()[pri:2, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:41 EET" name="nameIsVisable"
+                             finished-at="2024-01-19T16:28:41 EET" duration-ms="28" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- nameIsVisable -->
+                <test-method signature="categoryIsVisable()[pri:3, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:41 EET" name="categoryIsVisable"
+                             finished-at="2024-01-19T16:28:41 EET" duration-ms="21" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- categoryIsVisable -->
+                <test-method signature="priceIsVisable()[pri:4, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:41 EET" name="priceIsVisable"
+                             finished-at="2024-01-19T16:28:41 EET" duration-ms="20" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- priceIsVisable -->
+                <test-method signature="availabilityIsVisable()[pri:5, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:41 EET" name="availabilityIsVisable"
+                             finished-at="2024-01-19T16:28:41 EET" duration-ms="25" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- availabilityIsVisable -->
+                <test-method signature="conditionIsVisable()[pri:6, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:41 EET" name="conditionIsVisable"
+                             finished-at="2024-01-19T16:28:41 EET" duration-ms="22" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- conditionIsVisable -->
+                <test-method signature="brandIsVisable()[pri:7, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:41 EET" name="brandIsVisable"
+                             finished-at="2024-01-19T16:28:41 EET" duration-ms="23" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- brandIsVisable -->
+                <test-method signature="addingItemToTheCart()[pri:8, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:41 EET" name="addingItemToTheCart"
+                             finished-at="2024-01-19T16:28:42 EET" duration-ms="649" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- addingItemToTheCart -->
+                <test-method signature="addingToCartAndGoToCart()[pri:9, instance:Testing.PDPTesting@7a4ccb53]"
+                             started-at="2024-01-19T16:28:42 EET" name="addingToCartAndGoToCart"
+                             finished-at="2024-01-19T16:28:44 EET" duration-ms="1753" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- addingToCartAndGoToCart -->
+            </class> <!-- Testing.PDPTesting -->
+            <class name="Testing.ContactUsTesting">
+                <test-method signature="ContactingUsTesting()[pri:0, instance:Testing.ContactUsTesting@33afa13b]"
+                             started-at="2024-01-19T16:28:35 EET" name="ContactingUsTesting"
+                             finished-at="2024-01-19T16:28:40 EET" duration-ms="5308" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- ContactingUsTesting -->
+            </class> <!-- Testing.ContactUsTesting -->
+            <class name="Testing.NewUserSignUpTesting">
+                <test-method signature="enteringNewUser()[pri:0, instance:Testing.NewUserSignUpTesting@229d10bd]"
+                             started-at="2024-01-19T16:28:16 EET" name="enteringNewUser"
+                             finished-at="2024-01-19T16:28:17 EET" duration-ms="665" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- enteringNewUser -->
+                <test-method signature="enteringSignUpData()[pri:0, instance:Testing.NewUserSignUpTesting@229d10bd]"
+                             started-at="2024-01-19T16:28:17 EET" name="enteringSignUpData"
+                             finished-at="2024-01-19T16:28:27 EET" duration-ms="10386" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- enteringSignUpData -->
+            </class> <!-- Testing.NewUserSignUpTesting -->
+            <class name="Testing.LoginTesting">
+                <test-method signature="signinWithWrongCredentials()[pri:1, instance:Testing.LoginTesting@47542153]"
+                             started-at="2024-01-19T16:28:28 EET" name="signinWithWrongCredentials"
+                             finished-at="2024-01-19T16:28:29 EET" duration-ms="630" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- signinWithWrongCredentials -->
+                <test-method signature="signinWithCorrectCredentials()[pri:2, instance:Testing.LoginTesting@47542153]"
+                             started-at="2024-01-19T16:28:29 EET" name="signinWithCorrectCredentials"
+                             finished-at="2024-01-19T16:28:34 EET" duration-ms="4635" status="PASS">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- signinWithCorrectCredentials -->
+            </class> <!-- Testing.LoginTesting -->
+        </test> <!-- Test -->
+    </suite> <!-- AllTests -->
+</testng-results>

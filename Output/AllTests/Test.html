@@ -1,0 +1,335 @@
+<html>
+<head>
+    <title>TestNG: Test</title>
+    <link href="../testng.css" rel="stylesheet" type="text/css"/>
+    <link href="../my-testng.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        .log {
+            display: none;
+        }
+
+        .stack-trace {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        <!--
+        function flip(e) {
+            current = e.style.display;
+            if (current == 'block') {
+                e.style.display = 'none';
+                return 0;
+            } else {
+                e.style.display = 'block';
+                return 1;
+            }
+        }
+
+        function toggleBox(szDivId, elem, msg1, msg2) {
+            var res = -1;
+            if (document.getElementById) {
+                res = flip(document.getElementById(szDivId));
+            } else if (document.all) {
+                // this is the way old msie versions work
+                res = flip(document.all[szDivId]);
+            }
+            if (elem) {
+                if (res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+            }
+
+        }
+
+        function toggleAllBoxes() {
+            if (document.getElementsByTagName) {
+                d = document.getElementsByTagName('div');
+                for (i = 0; i < d.length; i++) {
+                    if (d[i].className == 'log') {
+                        flip(d[i]);
+                    }
+                }
+            }
+        }
+
+        // -->
+    </script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2>
+<table align="center" border='1'>
+    <tr>
+        <td>Tests passed/Failed/Skipped:</td>
+        <td>18/1/0</td>
+    </tr>
+    <tr>
+        <td>Started on:</td>
+        <td>Fri Jan 19 16:28:00 EET 2024</td>
+    </tr>
+    <tr>
+        <td>Total time:</td>
+        <td>55 seconds (55822 ms)</td>
+    </tr>
+    <tr>
+        <td>Included groups:</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Excluded groups:</td>
+        <td></td>
+    </tr>
+</table>
+<p/>
+<small><i>(Hover the method name to see the test class name)</i></small>
+<p/>
+<table border='1' class='invocation-failed' width='100%'>
+    <tr>
+        <td align='center' colspan='4'><b>FAILED TESTS</b></td>
+    </tr>
+    <tr>
+        <td><b>Test method</b></td>
+        <td><b>Attribute(s)</b></td>
+        <td width="30%"><b>Exception</b></td>
+        <td width="10%"><b>Time (seconds)</b></td>
+        <td><b>Instance</b></td>
+    </tr>
+    <tr>
+        <td title='Testing.PLPTesting.addingElementsToTheCart()'><b>addingElementsToTheCart</b><br>Test class:
+            Testing.PLPTesting
+        </td>
+        <td>
+            <div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.218)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c965aa485582ca0679b4a59df760598, findElement {using=css selector, value=/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49161/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c965aa485582ca0679b4a59df760598
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at POM.PLP.hoverOverOnItem(PLP.java:19)
+	at Testing.PLPTesting.addingElementsToTheCart(PLPTesting.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames</pre>
+            </div>
+            <a href='#'
+               onClick='toggleBox("stack-trace1120072844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+                to show all stack frames</a>
+            <div class='stack-trace' id='stack-trace1120072844'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=120.0.6099.218)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c965aa485582ca0679b4a59df760598, findElement {using=css selector, value=/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49161/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c965aa485582ca0679b4a59df760598
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at POM.PLP.hoverOverOnItem(PLP.java:19)
+	at Testing.PLPTesting.addingElementsToTheCart(PLPTesting.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+            </div>
+        </td>
+        <td>5</td>
+        <td>Testing.PLPTesting@56a6d5a6</td>
+    </tr>
+</table>
+<p>
+<table border='1' class='invocation-passed' width='100%'>
+    <tr>
+        <td align='center' colspan='4'><b>PASSED TESTS</b></td>
+    </tr>
+    <tr>
+        <td><b>Test method</b></td>
+        <td><b>Attribute(s)</b></td>
+        <td width="30%"><b>Exception</b></td>
+        <td width="10%"><b>Time (seconds)</b></td>
+        <td><b>Instance</b></td>
+    </tr>
+    <tr>
+        <td title='Testing.NewUserSignUpTesting.enteringNewUser()'><b>enteringNewUser</b><br>Test class:
+            Testing.NewUserSignUpTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.NewUserSignUpTesting@229d10bd</td>
+    </tr>
+    <tr>
+        <td title='Testing.NewUserSignUpTesting.enteringSignUpData()'><b>enteringSignUpData</b><br>Test class:
+            Testing.NewUserSignUpTesting
+        </td>
+        <td></td>
+        <td>10</td>
+        <td>Testing.NewUserSignUpTesting@229d10bd</td>
+    </tr>
+    <tr>
+        <td title='Testing.FirstPageTesting.loggingOut()'><b>loggingOut</b><br>Test class: Testing.FirstPageTesting</td>
+        <td></td>
+        <td>1</td>
+        <td>Testing.FirstPageTesting@2f177a4b</td>
+    </tr>
+    <tr>
+        <td title='Testing.FirstPageTesting.openLoginAndRigistrationPage()'><b>openLoginAndRigistrationPage</b><br>Test
+            class: Testing.FirstPageTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.FirstPageTesting@2f177a4b</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.categoryIsVisable()'><b>categoryIsVisable</b><br>Test class: Testing.PDPTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.availabilityIsVisable()'><b>availabilityIsVisable</b><br>Test class:
+            Testing.PDPTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.LoginTesting.signinWithCorrectCredentials()'><b>signinWithCorrectCredentials</b><br>Test
+            class: Testing.LoginTesting
+        </td>
+        <td></td>
+        <td>4</td>
+        <td>Testing.LoginTesting@47542153</td>
+    </tr>
+    <tr>
+        <td title='Testing.ContactUsTesting.ContactingUsTesting()'><b>ContactingUsTesting</b><br>Test class:
+            Testing.ContactUsTesting
+        </td>
+        <td></td>
+        <td>5</td>
+        <td>Testing.ContactUsTesting@33afa13b</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.nameIsVisable()'><b>nameIsVisable</b><br>Test class: Testing.PDPTesting</td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.priceIsVisable()'><b>priceIsVisable</b><br>Test class: Testing.PDPTesting</td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.PLPTesting.searchTesting()'><b>searchTesting</b><br>Test class: Testing.PLPTesting</td>
+        <td></td>
+        <td>6</td>
+        <td>Testing.PLPTesting@56a6d5a6</td>
+    </tr>
+    <tr>
+        <td title='Testing.LoginTesting.signinWithWrongCredentials()'><b>signinWithWrongCredentials</b><br>Test class:
+            Testing.LoginTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.LoginTesting@47542153</td>
+    </tr>
+    <tr>
+        <td title='Testing.FirstPageTesting.openContactingUsPage()'><b>openContactingUsPage</b><br>Test class:
+            Testing.FirstPageTesting
+        </td>
+        <td></td>
+        <td>1</td>
+        <td>Testing.FirstPageTesting@2f177a4b</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.addingItemToTheCart()'><b>addingItemToTheCart</b><br>Test class:
+            Testing.PDPTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.brandIsVisable()'><b>brandIsVisable</b><br>Test class: Testing.PDPTesting</td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.openPDPForTheFirstItem()'><b>openPDPForTheFirstItem</b><br>Test class:
+            Testing.PDPTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.conditionIsVisable()'><b>conditionIsVisable</b><br>Test class: Testing.PDPTesting
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+    <tr>
+        <td title='Testing.PDPTesting.addingToCartAndGoToCart()'><b>addingToCartAndGoToCart</b><br>Test class:
+            Testing.PDPTesting
+        </td>
+        <td></td>
+        <td>1</td>
+        <td>Testing.PDPTesting@7a4ccb53</td>
+    </tr>
+</table>
+<p>
+</body>
+</html>

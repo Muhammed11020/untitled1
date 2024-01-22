@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>TestNG Report</title>
+    <style type="text/css">table {
+        margin-bottom: 10px;
+        border-collapse: collapse;
+        empty-cells: show
+    }
+
+    th, td {
+        border: 1px solid #009;
+        padding: .25em .5em
+    }
+
+    th {
+        vertical-align: bottom
+    }
+
+    td {
+        vertical-align: top
+    }
+
+    table a {
+        font-weight: bold
+    }
+
+    .stripe td {
+        background-color: #E6EBF9
+    }
+
+    .num {
+        text-align: right
+    }
+
+    .passedodd td {
+        background-color: #3F3
+    }
+
+    .passedeven td {
+        background-color: #0A0
+    }
+
+    .skippedodd td {
+        background-color: #DDD
+    }
+
+    .skippedeven td {
+        background-color: #CCC
+    }
+
+    .failedodd td, .attn {
+        background-color: #F33
+    }
+
+    .failedeven td, .stripe .attn {
+        background-color: #D00
+    }
+
+    .stacktrace {
+        white-space: pre;
+        font-family: monospace
+    }
+
+    .totop {
+        font-size: 85%;
+        text-align: center;
+        border-bottom: 2px solid #000
+    }
+
+    .invisible {
+        display: none
+    }</style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Test</th>
+        <th># Passed</th>
+        <th># Skipped</th>
+        <th># Retried</th>
+        <th># Failed</th>
+        <th>Time (ms)</th>
+        <th>Included Groups</th>
+        <th>Excluded Groups</th>
+    </tr>
+    <tr>
+        <th colspan="8">AllTests</th>
+    </tr>
+    <tr>
+        <td><a href="#t0">Test</a></td>
+        <td class="num">18</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num attn">1</td>
+        <td class="num">55,822</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<table id='summary'>
+    <thead>
+    <tr>
+        <th>Class</th>
+        <th>Method</th>
+        <th>Start</th>
+        <th>Time (ms)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th colspan="4">AllTests</th>
+    </tr>
+    </tbody>
+    <tbody id="t0">
+    <tr>
+        <th colspan="4">Test &#8212; failed</th>
+    </tr>
+    <tr class="failedeven">
+        <td rowspan="1">Testing.PLPTesting</td>
+        <td><a href="#m0">addingElementsToTheCart</a></td>
+        <td rowspan="1">1705674530755</td>
+        <td rowspan="1">5387</td>
+    </tr>
+    <tr>
+        <th colspan="4">Test &#8212; passed</th>
+    </tr>
+    <tr class="passedeven">
+        <td rowspan="1">Testing.ContactUsTesting</td>
+        <td><a href="#m1">ContactingUsTesting</a></td>
+        <td rowspan="1">1705674515553</td>
+        <td rowspan="1">5308</td>
+    </tr>
+    <tr class="passedodd">
+        <td rowspan="3">Testing.FirstPageTesting</td>
+        <td><a href="#m2">loggingOut</a></td>
+        <td rowspan="1">1705674507849</td>
+        <td rowspan="1">1117</td>
+    </tr>
+    <tr class="passedodd">
+        <td><a href="#m3">openContactingUsPage</a></td>
+        <td rowspan="1">1705674514234</td>
+        <td rowspan="1">1318</td>
+    </tr>
+    <tr class="passedodd">
+        <td><a href="#m4">openLoginAndRigistrationPage</a></td>
+        <td rowspan="1">1705674495793</td>
+        <td rowspan="1">998</td>
+    </tr>
+    <tr class="passedeven">
+        <td rowspan="2">Testing.LoginTesting</td>
+        <td><a href="#m5">signinWithCorrectCredentials</a></td>
+        <td rowspan="1">1705674509598</td>
+        <td rowspan="1">4635</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m6">signinWithWrongCredentials</a></td>
+        <td rowspan="1">1705674508968</td>
+        <td rowspan="1">630</td>
+    </tr>
+    <tr class="passedodd">
+        <td rowspan="2">Testing.NewUserSignUpTesting</td>
+        <td><a href="#m7">enteringNewUser</a></td>
+        <td rowspan="1">1705674496793</td>
+        <td rowspan="1">665</td>
+    </tr>
+    <tr class="passedodd">
+        <td><a href="#m8">enteringSignUpData</a></td>
+        <td rowspan="1">1705674497459</td>
+        <td rowspan="1">10386</td>
+    </tr>
+    <tr class="passedeven">
+        <td rowspan="9">Testing.PDPTesting</td>
+        <td><a href="#m9">addingItemToTheCart</a></td>
+        <td rowspan="1">1705674521701</td>
+        <td rowspan="1">649</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m10">addingToCartAndGoToCart</a></td>
+        <td rowspan="1">1705674522351</td>
+        <td rowspan="1">1753</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m11">availabilityIsVisable</a></td>
+        <td rowspan="1">1705674521629</td>
+        <td rowspan="1">25</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m12">brandIsVisable</a></td>
+        <td rowspan="1">1705674521677</td>
+        <td rowspan="1">23</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m13">categoryIsVisable</a></td>
+        <td rowspan="1">1705674521586</td>
+        <td rowspan="1">21</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m14">conditionIsVisable</a></td>
+        <td rowspan="1">1705674521654</td>
+        <td rowspan="1">22</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m15">nameIsVisable</a></td>
+        <td rowspan="1">1705674521558</td>
+        <td rowspan="1">28</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m16">openPDPForTheFirstItem</a></td>
+        <td rowspan="1">1705674520862</td>
+        <td rowspan="1">695</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m17">priceIsVisable</a></td>
+        <td rowspan="1">1705674521608</td>
+        <td rowspan="1">20</td>
+    </tr>
+    <tr class="passedodd">
+        <td rowspan="1">Testing.PLPTesting</td>
+        <td><a href="#m18">searchTesting</a></td>
+        <td rowspan="1">1705674524106</td>
+        <td rowspan="1">6649</td>
+    </tr>
+    </tbody>
+</table>
+<h2>Test</h2>
+<h3 id="m0">Testing.PLPTesting#addingElementsToTheCart</h3>
+<table class="result">
+    <tr>
+        <th>Exception</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or
+                illegal selector was specified
+                (Session info: chrome=120.0.6099.218)
+                For documentation on this error, please visit:
+                https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+                Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+                System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+                java.version: &apos;21.0.2&apos;
+                Driver info: org.openqa.selenium.chrome.ChromeDriver
+                Command: [6c965aa485582ca0679b4a59df760598, findElement {using=css selector,
+                value=/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]}]
+                Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome:
+                {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\moham\AppData\Loca...},
+                fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49161}, networkConnectionEnabled:
+                false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+                ws://localhost:49161/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true,
+                strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+                unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
+                webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+                webauthn:virtualAuthenticators: true}
+                Session ID: 6c965aa485582ca0679b4a59df760598
+                at
+                org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+                at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+                at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+                at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+                at
+                org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+                at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+                at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+                at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+                at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+                at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+                at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+                at POM.PLP.hoverOverOnItem(PLP.java:19)
+                at Testing.PLPTesting.addingElementsToTheCart(PLPTesting.java:33)
+                at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+                at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+                at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                ... Removed 25 stack frames
+            </div>
+        </td>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Testing.ContactUsTesting#ContactingUsTesting</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Testing.FirstPageTesting#loggingOut</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Testing.FirstPageTesting#openContactingUsPage</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Testing.FirstPageTesting#openLoginAndRigistrationPage</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Testing.LoginTesting#signinWithCorrectCredentials</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Testing.LoginTesting#signinWithWrongCredentials</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Testing.NewUserSignUpTesting#enteringNewUser</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Testing.NewUserSignUpTesting#enteringSignUpData</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Testing.PDPTesting#addingItemToTheCart</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Testing.PDPTesting#addingToCartAndGoToCart</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Testing.PDPTesting#availabilityIsVisable</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Testing.PDPTesting#brandIsVisable</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Testing.PDPTesting#categoryIsVisable</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Testing.PDPTesting#conditionIsVisable</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">Testing.PDPTesting#nameIsVisable</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">Testing.PDPTesting#openPDPForTheFirstItem</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">Testing.PDPTesting#priceIsVisable</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">Testing.PLPTesting#searchTesting</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

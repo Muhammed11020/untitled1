@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>TestNG reports</title>
+
+    <link href="testng-reports1.css" id="ultra" rel="stylesheet" type="text/css"/>
+    <link disabled="false" href="testng-reports.css" id="retro" rel="stylesheet" type="text/css"/>
+    <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="testng-reports.js" type="text/javascript"></script>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type='text/javascript'>
+        google.load('visualization', '1', {packages: ['table']});
+        google.setOnLoadCallback(drawTable);
+        var suiteTableInitFunctions = new Array();
+        var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+</head>
+
+<body>
+<div class="top-banner-root">
+    <span class="top-banner-title-font">Test results</span>
+    <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+    <br/>
+    <span class="top-banner-font-1">1 suite, 1 failed test</span>
+</div> <!-- top-banner-root -->
+<div class="navigator-root">
+    <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a class="collapse-all-link" href="#" title="Collapse/expand all the suites">
+            <img class="collapse-all-icon" src="collapseall.gif">
+            </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+    </div> <!-- navigator-suite-header -->
+    <div class="suite">
+        <div class="rounded-window">
+            <div class="suite-header light-rounded-window-top">
+                <a class="navigator-link" href="#" panel-name="suite-AllTests">
+                    <span class="suite-name border-failed">AllTests</span>
+                </a> <!-- navigator-link -->
+            </div> <!-- suite-header light-rounded-window-top -->
+            <div class="navigator-suite-content">
+                <div class="suite-section-title">
+                    <span>Info</span>
+                </div> <!-- suite-section-title -->
+                <div class="suite-section-content">
+                    <ul>
+                        <li>
+                            <a class="navigator-link " href="#" panel-name="test-xml-AllTests">
+                                <span>A:\Testing\Projects\untitled\TestingAll.xml</span>
+                            </a> <!-- navigator-link  -->
+                        </li>
+                        <li>
+                            <a class="navigator-link " href="#" panel-name="testlist-AllTests">
+                                <span class="test-stats">1 test</span>
+                            </a> <!-- navigator-link  -->
+                        </li>
+                        <li>
+                            <a class="navigator-link " href="#" panel-name="group-AllTests">
+                                <span>0 groups</span>
+                            </a> <!-- navigator-link  -->
+                        </li>
+                        <li>
+                            <a class="navigator-link " href="#" panel-name="times-AllTests">
+                                <span>Times</span>
+                            </a> <!-- navigator-link  -->
+                        </li>
+                        <li>
+                            <a class="navigator-link " href="#" panel-name="reporter-AllTests">
+                                <span>Reporter output</span>
+                            </a> <!-- navigator-link  -->
+                        </li>
+                        <li>
+                            <a class="navigator-link " href="#" panel-name="ignored-methods-AllTests">
+                                <span>Ignored methods</span>
+                            </a> <!-- navigator-link  -->
+                        </li>
+                        <li>
+                            <a class="navigator-link " href="#" panel-name="chronological-AllTests">
+                                <span>Chronological view</span>
+                            </a> <!-- navigator-link  -->
+                        </li>
+                    </ul>
+                </div> <!-- suite-section-content -->
+                <div class="result-section">
+                    <div class="suite-section-title">
+                        <span>Results</span>
+                    </div> <!-- suite-section-title -->
+                    <div class="suite-section-content">
+                        <ul>
+                            <li>
+                                <span class="method-stats">19 methods, 1 failed,   18 passed</span>
+                            </li>
+                            <li>
+                                <span class="method-list-title failed">Failed methods</span>
+                                <span class="show-or-hide-methods failed">
+                      <a class="hide-methods failed suite-AllTests" href="#" panel-name="suite-AllTests"> (hide)</a>
+                                    <!-- hide-methods failed suite-AllTests -->
+                      <a class="show-methods failed suite-AllTests" href="#" panel-name="suite-AllTests"> (show)</a>
+                                    <!-- show-methods failed suite-AllTests -->
+                    </span>
+                                <div class="method-list-content failed suite-AllTests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="addingElementsToTheCart" href="#" panel-name="suite-AllTests"
+                           title="Testing.PLPTesting">addingElementsToTheCart</a>
+                          <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                </div> <!-- method-list-content failed suite-AllTests -->
+                            </li>
+                            <li>
+                                <span class="method-list-title passed">Passed methods</span>
+                                <span class="show-or-hide-methods passed">
+                      <a class="hide-methods passed suite-AllTests" href="#" panel-name="suite-AllTests"> (hide)</a>
+                                    <!-- hide-methods passed suite-AllTests -->
+                      <a class="show-methods passed suite-AllTests" href="#" panel-name="suite-AllTests"> (show)</a>
+                                    <!-- show-methods passed suite-AllTests -->
+                    </span>
+                                <div class="method-list-content passed suite-AllTests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="ContactingUsTesting" href="#"
+                           panel-name="suite-AllTests" title="Testing.ContactUsTesting">ContactingUsTesting</a>
+                          <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="addingItemToTheCart" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">addingItemToTheCart</a> <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="addingToCartAndGoToCart" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">addingToCartAndGoToCart</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="availabilityIsVisable" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">availabilityIsVisable</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="brandIsVisable" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">brandIsVisable</a> <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="categoryIsVisable" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">categoryIsVisable</a> <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="conditionIsVisable" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">conditionIsVisable</a> <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="enteringNewUser" href="#"
+                           panel-name="suite-AllTests" title="Testing.NewUserSignUpTesting">enteringNewUser</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="enteringSignUpData" href="#"
+                           panel-name="suite-AllTests" title="Testing.NewUserSignUpTesting">enteringSignUpData</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="loggingOut" href="#"
+                           panel-name="suite-AllTests" title="Testing.FirstPageTesting">loggingOut</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="nameIsVisable" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">nameIsVisable</a> <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="openContactingUsPage" href="#"
+                           panel-name="suite-AllTests" title="Testing.FirstPageTesting">openContactingUsPage</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="openLoginAndRigistrationPage" href="#"
+                           panel-name="suite-AllTests" title="Testing.FirstPageTesting">openLoginAndRigistrationPage</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="openPDPForTheFirstItem" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">openPDPForTheFirstItem</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="priceIsVisable" href="#" panel-name="suite-AllTests"
+                           title="Testing.PDPTesting">priceIsVisable</a> <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="searchTesting" href="#" panel-name="suite-AllTests"
+                           title="Testing.PLPTesting">searchTesting</a> <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="signinWithCorrectCredentials" href="#"
+                           panel-name="suite-AllTests" title="Testing.LoginTesting">signinWithCorrectCredentials</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                    <span>
+                        <img src="passed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="signinWithWrongCredentials" href="#"
+                           panel-name="suite-AllTests" title="Testing.LoginTesting">signinWithWrongCredentials</a>
+                                        <!-- method navigator-link -->
+                      </span>
+                                    <br/>
+                                </div> <!-- method-list-content passed suite-AllTests -->
+                            </li>
+                        </ul>
+                    </div> <!-- suite-section-content -->
+                </div> <!-- result-section -->
+            </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+    </div> <!-- suite -->
+</div> <!-- navigator-root -->
+<div class="wrapper">
+    <div class="main-panel-root">
+        <div class="panel AllTests" panel-name="suite-AllTests">
+            <div class="suite-AllTests-class-failed">
+                <div class="main-panel-header rounded-window-top">
+                    <img src="failed.png"/>
+                    <span class="class-name">Testing.PLPTesting</span>
+                </div> <!-- main-panel-header rounded-window-top -->
+                <div class="main-panel-content rounded-window-bottom">
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="addingElementsToTheCart">
+                            </a> <!-- addingElementsToTheCart -->
+                            <span class="method-name">addingElementsToTheCart</span>
+                            <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: An
+                                invalid or illegal selector was specified
+                                (Session info: chrome=120.0.6099.218)
+                                For documentation on this error, please visit:
+                                https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+                                Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+                                System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version:
+                                &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+                                Driver info: org.openqa.selenium.chrome.ChromeDriver
+                                Command: [6c965aa485582ca0679b4a59df760598, findElement {using=css selector,
+                                value=/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]}]
+                                Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion:
+                                120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66...,
+                                userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions:
+                                {debuggerAddress: localhost:49161}, networkConnectionEnabled: false, pageLoadStrategy:
+                                normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49161/devtoo...,
+                                se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false,
+                                timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior:
+                                dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob:
+                                true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+                                webauthn:virtualAuthenticators: true}
+                                Session ID: 6c965aa485582ca0679b4a59df760598
+                                at
+                                org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+                                at
+                                org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+                                at
+                                org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+                                at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+                                at
+                                org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+                                at
+                                org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+                                at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+                                at
+                                org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+                                at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+                                at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+                                at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+                                at POM.PLP.hoverOverOnItem(PLP.java:19)
+                                at Testing.PLPTesting.addingElementsToTheCart(PLPTesting.java:33)
+                                at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+                                at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+                                at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                                ... Removed 25 stack frames
+                            </div> <!-- stack-trace -->
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- suite-AllTests-class-failed -->
+            <div class="suite-AllTests-class-passed">
+                <div class="main-panel-header rounded-window-top">
+                    <img src="passed.png"/>
+                    <span class="class-name">Testing.ContactUsTesting</span>
+                </div> <!-- main-panel-header rounded-window-top -->
+                <div class="main-panel-content rounded-window-bottom">
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="ContactingUsTesting">
+                            </a> <!-- ContactingUsTesting -->
+                            <span class="method-name">ContactingUsTesting</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- suite-AllTests-class-passed -->
+            <div class="suite-AllTests-class-passed">
+                <div class="main-panel-header rounded-window-top">
+                    <img src="passed.png"/>
+                    <span class="class-name">Testing.FirstPageTesting</span>
+                </div> <!-- main-panel-header rounded-window-top -->
+                <div class="main-panel-content rounded-window-bottom">
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="loggingOut">
+                            </a> <!-- loggingOut -->
+                            <span class="method-name">loggingOut</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="openContactingUsPage">
+                            </a> <!-- openContactingUsPage -->
+                            <span class="method-name">openContactingUsPage</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="openLoginAndRigistrationPage">
+                            </a> <!-- openLoginAndRigistrationPage -->
+                            <span class="method-name">openLoginAndRigistrationPage</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- suite-AllTests-class-passed -->
+            <div class="suite-AllTests-class-passed">
+                <div class="main-panel-header rounded-window-top">
+                    <img src="passed.png"/>
+                    <span class="class-name">Testing.NewUserSignUpTesting</span>
+                </div> <!-- main-panel-header rounded-window-top -->
+                <div class="main-panel-content rounded-window-bottom">
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="enteringNewUser">
+                            </a> <!-- enteringNewUser -->
+                            <span class="method-name">enteringNewUser</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="enteringSignUpData">
+                            </a> <!-- enteringSignUpData -->
+                            <span class="method-name">enteringSignUpData</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- suite-AllTests-class-passed -->
+            <div class="suite-AllTests-class-passed">
+                <div class="main-panel-header rounded-window-top">
+                    <img src="passed.png"/>
+                    <span class="class-name">Testing.PDPTesting</span>
+                </div> <!-- main-panel-header rounded-window-top -->
+                <div class="main-panel-content rounded-window-bottom">
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="addingItemToTheCart">
+                            </a> <!-- addingItemToTheCart -->
+                            <span class="method-name">addingItemToTheCart</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="addingToCartAndGoToCart">
+                            </a> <!-- addingToCartAndGoToCart -->
+                            <span class="method-name">addingToCartAndGoToCart</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="availabilityIsVisable">
+                            </a> <!-- availabilityIsVisable -->
+                            <span class="method-name">availabilityIsVisable</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="brandIsVisable">
+                            </a> <!-- brandIsVisable -->
+                            <span class="method-name">brandIsVisable</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="categoryIsVisable">
+                            </a> <!-- categoryIsVisable -->
+                            <span class="method-name">categoryIsVisable</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="conditionIsVisable">
+                            </a> <!-- conditionIsVisable -->
+                            <span class="method-name">conditionIsVisable</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="nameIsVisable">
+                            </a> <!-- nameIsVisable -->
+                            <span class="method-name">nameIsVisable</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="openPDPForTheFirstItem">
+                            </a> <!-- openPDPForTheFirstItem -->
+                            <span class="method-name">openPDPForTheFirstItem</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="priceIsVisable">
+                            </a> <!-- priceIsVisable -->
+                            <span class="method-name">priceIsVisable</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- suite-AllTests-class-passed -->
+            <div class="suite-AllTests-class-passed">
+                <div class="main-panel-header rounded-window-top">
+                    <img src="passed.png"/>
+                    <span class="class-name">Testing.LoginTesting</span>
+                </div> <!-- main-panel-header rounded-window-top -->
+                <div class="main-panel-content rounded-window-bottom">
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="signinWithCorrectCredentials">
+                            </a> <!-- signinWithCorrectCredentials -->
+                            <span class="method-name">signinWithCorrectCredentials</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="signinWithWrongCredentials">
+                            </a> <!-- signinWithWrongCredentials -->
+                            <span class="method-name">signinWithWrongCredentials</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- suite-AllTests-class-passed -->
+            <div class="suite-AllTests-class-passed">
+                <div class="main-panel-header rounded-window-top">
+                    <img src="passed.png"/>
+                    <span class="class-name">Testing.PLPTesting</span>
+                </div> <!-- main-panel-header rounded-window-top -->
+                <div class="main-panel-content rounded-window-bottom">
+                    <div class="method">
+                        <div class="method-content">
+                            <a name="searchTesting">
+                            </a> <!-- searchTesting -->
+                            <span class="method-name">searchTesting</span>
+                        </div> <!-- method-content -->
+                    </div> <!-- method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- suite-AllTests-class-passed -->
+        </div> <!-- panel AllTests -->
+        <div class="panel" panel-name="test-xml-AllTests">
+            <div class="main-panel-header rounded-window-top">
+                <span class="header-content">A:\Testing\Projects\untitled\TestingAll.xml</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AllTests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Testing.FirstPageTesting&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;openLoginAndRigistrationPage&quot;/&gt;
+          &lt;include name=&quot;loggingOut&quot;/&gt;
+          &lt;include name=&quot;openContactingUsPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Testing.FirstPageTesting --&gt;
+      &lt;class name=&quot;Testing.NewUserSignUpTesting&quot;/&gt;
+      &lt;class name=&quot;Testing.LoginTesting&quot;/&gt;
+      &lt;class name=&quot;Testing.ContactUsTesting&quot;/&gt;
+      &lt;class name=&quot;Testing.PDPTesting&quot;/&gt;
+      &lt;class name=&quot;Testing.PLPTesting&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- AllTests --&gt;
+            </pre>
+            </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div class="panel" panel-name="testlist-AllTests">
+            <div class="main-panel-header rounded-window-top">
+                <span class="header-content">Tests for AllTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+                <ul>
+                    <li>
+                        <span class="test-name">Test (6 classes)</span>
+                    </li>
+                </ul>
+            </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div class="panel" panel-name="group-AllTests">
+            <div class="main-panel-header rounded-window-top">
+                <span class="header-content">Groups for AllTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+            </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div class="panel" panel-name="times-AllTests">
+            <div class="main-panel-header rounded-window-top">
+                <span class="header-content">Times for AllTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+                <div class="times-div">
+                    <script type="text/javascript">
+                        suiteTableInitFunctions.push('tableData_AllTests');
+
+                        function tableData_AllTests() {
+                            var data = new google.visualization.DataTable();
+                            data.addColumn('number', 'Number');
+                            data.addColumn('string', 'Method');
+                            data.addColumn('string', 'Class');
+                            data.addColumn('number', 'Time (ms)');
+                            data.addRows(19);
+                            data.setCell(0, 0, 0)
+                            data.setCell(0, 1, 'enteringSignUpData')
+                            data.setCell(0, 2, 'Testing.NewUserSignUpTesting')
+                            data.setCell(0, 3, 10386);
+                            data.setCell(1, 0, 1)
+                            data.setCell(1, 1, 'searchTesting')
+                            data.setCell(1, 2, 'Testing.PLPTesting')
+                            data.setCell(1, 3, 6649);
+                            data.setCell(2, 0, 2)
+                            data.setCell(2, 1, 'addingElementsToTheCart')
+                            data.setCell(2, 2, 'Testing.PLPTesting')
+                            data.setCell(2, 3, 5387);
+                            data.setCell(3, 0, 3)
+                            data.setCell(3, 1, 'ContactingUsTesting')
+                            data.setCell(3, 2, 'Testing.ContactUsTesting')
+                            data.setCell(3, 3, 5308);
+                            data.setCell(4, 0, 4)
+                            data.setCell(4, 1, 'signinWithCorrectCredentials')
+                            data.setCell(4, 2, 'Testing.LoginTesting')
+                            data.setCell(4, 3, 4635);
+                            data.setCell(5, 0, 5)
+                            data.setCell(5, 1, 'addingToCartAndGoToCart')
+                            data.setCell(5, 2, 'Testing.PDPTesting')
+                            data.setCell(5, 3, 1753);
+                            data.setCell(6, 0, 6)
+                            data.setCell(6, 1, 'openContactingUsPage')
+                            data.setCell(6, 2, 'Testing.FirstPageTesting')
+                            data.setCell(6, 3, 1318);
+                            data.setCell(7, 0, 7)
+                            data.setCell(7, 1, 'loggingOut')
+                            data.setCell(7, 2, 'Testing.FirstPageTesting')
+                            data.setCell(7, 3, 1117);
+                            data.setCell(8, 0, 8)
+                            data.setCell(8, 1, 'openLoginAndRigistrationPage')
+                            data.setCell(8, 2, 'Testing.FirstPageTesting')
+                            data.setCell(8, 3, 998);
+                            data.setCell(9, 0, 9)
+                            data.setCell(9, 1, 'openPDPForTheFirstItem')
+                            data.setCell(9, 2, 'Testing.PDPTesting')
+                            data.setCell(9, 3, 695);
+                            data.setCell(10, 0, 10)
+                            data.setCell(10, 1, 'enteringNewUser')
+                            data.setCell(10, 2, 'Testing.NewUserSignUpTesting')
+                            data.setCell(10, 3, 665);
+                            data.setCell(11, 0, 11)
+                            data.setCell(11, 1, 'addingItemToTheCart')
+                            data.setCell(11, 2, 'Testing.PDPTesting')
+                            data.setCell(11, 3, 649);
+                            data.setCell(12, 0, 12)
+                            data.setCell(12, 1, 'signinWithWrongCredentials')
+                            data.setCell(12, 2, 'Testing.LoginTesting')
+                            data.setCell(12, 3, 630);
+                            data.setCell(13, 0, 13)
+                            data.setCell(13, 1, 'nameIsVisable')
+                            data.setCell(13, 2, 'Testing.PDPTesting')
+                            data.setCell(13, 3, 28);
+                            data.setCell(14, 0, 14)
+                            data.setCell(14, 1, 'availabilityIsVisable')
+                            data.setCell(14, 2, 'Testing.PDPTesting')
+                            data.setCell(14, 3, 25);
+                            data.setCell(15, 0, 15)
+                            data.setCell(15, 1, 'brandIsVisable')
+                            data.setCell(15, 2, 'Testing.PDPTesting')
+                            data.setCell(15, 3, 23);
+                            data.setCell(16, 0, 16)
+                            data.setCell(16, 1, 'conditionIsVisable')
+                            data.setCell(16, 2, 'Testing.PDPTesting')
+                            data.setCell(16, 3, 22);
+                            data.setCell(17, 0, 17)
+                            data.setCell(17, 1, 'categoryIsVisable')
+                            data.setCell(17, 2, 'Testing.PDPTesting')
+                            data.setCell(17, 3, 21);
+                            data.setCell(18, 0, 18)
+                            data.setCell(18, 1, 'priceIsVisable')
+                            data.setCell(18, 2, 'Testing.PDPTesting')
+                            data.setCell(18, 3, 20);
+                            window.suiteTableData['AllTests'] = {tableData: data, tableDiv: 'times-div-AllTests'}
+                            return data;
+                        }
+                    </script>
+                    <span class="suite-total-time">Total running time: 40 seconds</span>
+                    <div id="times-div-AllTests">
+                    </div> <!-- times-div-AllTests -->
+                </div> <!-- times-div -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div class="panel" panel-name="reporter-AllTests">
+            <div class="main-panel-header rounded-window-top">
+                <span class="header-content">Reporter output for AllTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+            </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div class="panel" panel-name="ignored-methods-AllTests">
+            <div class="main-panel-header rounded-window-top">
+                <span class="header-content">7 ignored methods</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+                <div class="ignored-class-div">
+                    <span class="ignored-class-name">Testing.FirstPageTesting</span>
+                    <div class="ignored-methods-div">
+                        <span class="ignored-method-name">openProductsPageTesting</span>
+                        <br/>
+                        <span class="ignored-method-name">openTestCases</span>
+                        <br/>
+                    </div> <!-- ignored-methods-div -->
+                </div> <!-- ignored-class-div -->
+                <div class="ignored-class-div">
+                    <span class="ignored-class-name">Testing.ContactUsTesting</span>
+                    <div class="ignored-methods-div">
+                        <span class="ignored-method-name">setUp</span>
+                        <br/>
+                    </div> <!-- ignored-methods-div -->
+                </div> <!-- ignored-class-div -->
+                <div class="ignored-class-div">
+                    <span class="ignored-class-name">Testing.NewUserSignUpTesting</span>
+                    <div class="ignored-methods-div">
+                        <span class="ignored-method-name">setUp</span>
+                        <br/>
+                    </div> <!-- ignored-methods-div -->
+                </div> <!-- ignored-class-div -->
+                <div class="ignored-class-div">
+                    <span class="ignored-class-name">Testing.PDPTesting</span>
+                    <div class="ignored-methods-div">
+                        <span class="ignored-method-name">setUp</span>
+                        <br/>
+                    </div> <!-- ignored-methods-div -->
+                </div> <!-- ignored-class-div -->
+                <div class="ignored-class-div">
+                    <span class="ignored-class-name">Testing.LoginTesting</span>
+                    <div class="ignored-methods-div">
+                        <span class="ignored-method-name">setUp</span>
+                        <br/>
+                    </div> <!-- ignored-methods-div -->
+                </div> <!-- ignored-class-div -->
+                <div class="ignored-class-div">
+                    <span class="ignored-class-name">Testing.PLPTesting</span>
+                    <div class="ignored-methods-div">
+                        <span class="ignored-method-name">setUp</span>
+                        <br/>
+                    </div> <!-- ignored-methods-div -->
+                </div> <!-- ignored-class-div -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div class="panel" panel-name="chronological-AllTests">
+            <div class="main-panel-header rounded-window-top">
+                <span class="header-content">Methods in chronological order</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.FirstPageTesting</div>
+                    <!-- chronological-class-name -->
+                    <div class="configuration-test before">
+                        <span class="method-name">setUp</span>
+                        <span class="method-start">0 ms</span>
+                    </div> <!-- configuration-test before -->
+                    <div class="test-method">
+                        <span class="method-name">openLoginAndRigistrationPage</span>
+                        <span class="method-start">15461 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- chronological-class -->
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.NewUserSignUpTesting</div>
+                    <!-- chronological-class-name -->
+                    <div class="test-method">
+                        <span class="method-name">enteringNewUser</span>
+                        <span class="method-start">16461 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">enteringSignUpData</span>
+                        <span class="method-start">17127 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- chronological-class -->
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.FirstPageTesting</div>
+                    <!-- chronological-class-name -->
+                    <div class="test-method">
+                        <span class="method-name">loggingOut</span>
+                        <span class="method-start">27517 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- chronological-class -->
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.LoginTesting</div> <!-- chronological-class-name -->
+                    <div class="test-method">
+                        <span class="method-name">signinWithWrongCredentials</span>
+                        <span class="method-start">28636 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">signinWithCorrectCredentials</span>
+                        <span class="method-start">29266 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- chronological-class -->
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.FirstPageTesting</div>
+                    <!-- chronological-class-name -->
+                    <div class="test-method">
+                        <span class="method-name">openContactingUsPage</span>
+                        <span class="method-start">33902 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- chronological-class -->
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.ContactUsTesting</div>
+                    <!-- chronological-class-name -->
+                    <div class="test-method">
+                        <span class="method-name">ContactingUsTesting</span>
+                        <span class="method-start">35221 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- chronological-class -->
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.PDPTesting</div> <!-- chronological-class-name -->
+                    <div class="test-method">
+                        <span class="method-name">openPDPForTheFirstItem</span>
+                        <span class="method-start">40530 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">nameIsVisable</span>
+                        <span class="method-start">41226 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">categoryIsVisable</span>
+                        <span class="method-start">41254 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">priceIsVisable</span>
+                        <span class="method-start">41276 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">availabilityIsVisable</span>
+                        <span class="method-start">41297 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">conditionIsVisable</span>
+                        <span class="method-start">41322 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">brandIsVisable</span>
+                        <span class="method-start">41345 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">addingItemToTheCart</span>
+                        <span class="method-start">41369 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <span class="method-name">addingToCartAndGoToCart</span>
+                        <span class="method-start">42019 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- chronological-class -->
+                <div class="chronological-class">
+                    <div class="chronological-class-name">Testing.PLPTesting</div> <!-- chronological-class-name -->
+                    <div class="test-method">
+                        <span class="method-name">searchTesting</span>
+                        <span class="method-start">43774 ms</span>
+                    </div> <!-- test-method -->
+                    <div class="test-method">
+                        <img src="failed.png">
+                        </img>
+                        <span class="method-name">addingElementsToTheCart</span>
+                        <span class="method-start">50423 ms</span>
+                    </div> <!-- test-method -->
+                </div> <!-- main-panel-content rounded-window-bottom -->
+            </div> <!-- panel -->
+        </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+</body>
+<script src="testng-reports2.js" type="text/javascript"></script>
+</html>
