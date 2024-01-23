@@ -42,5 +42,21 @@ public class ProductPage {
     public void clickingViewCart() {
         BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"cartModal\"]/div/div/div[2]/p[2]/a")).click();
     }
+    public void enterNameInReview(String name)
+    {
+        BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"name\"]")).sendKeys(name);
+    }
+    public void enterMailInReview(String mail)
+    {
+        BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"email\"]")).sendKeys(mail);
+    }
+    public void enterMSGReview(String msg)
+    {
+        BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"review\"]")).sendKeys(msg);
+    }
+    public void clickSubmitReview()
+    {
+        BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"button-review\"]")).click();
+    }
 
 }
