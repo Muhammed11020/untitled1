@@ -60,4 +60,8 @@ public class FirstPage {
     {
         BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"form\"]/div/div/div/div/a")).click();
     }
+    public void clickingCart()
+    {
+        BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[3]/a")).click();
+    }
 }

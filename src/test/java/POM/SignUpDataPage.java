@@ -77,7 +77,7 @@ public class SignUpDataPage {
         BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"form\"]/div/div/div/div[1]/form/button")).click();
     }
 
-    public void clickingContinueAfterEnteringData() {
+    public void  clickingContinueAfterEnteringData() {
         BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"form\"]/div/div/div/div/a")).click();
     }
 }
