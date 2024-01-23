@@ -11,6 +11,8 @@
                     <include name="openTestCases"/>
                     <include name="openProductsPageTesting"/>
                     <include name="deletingAccount"/>
+                    <include name="addingItesmsFromRecommendations"/>
+
 
                 </methods>
             </class>

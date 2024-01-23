@@ -2,11 +2,11 @@ package Testing;
 
 import POM.BaseClass;
 import POM.FirstPage;
+import POM.PLP;
 import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -77,5 +77,21 @@ public class FirstPageTesting extends BaseClass {
         assertEquals("Account deleted successfully","ACCOUNT DELETED!",BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"form\"]/div/div/div/h2/b")).getText());
         f.clickingContinueAfterDeletingAccount();
         assertEquals("Home Page opens after deleting the account","https://automationexercise.com/",BaseClass.getWebDriver().getCurrentUrl());
+    }
+    @Test(dependsOnMethods = "deletingAccount")
+    public void addingItesmsFromRecommendations()
+    {
+        WebDriverWait wait = new WebDriverWait(BaseClass.getWebDriver(), Duration.ofMillis(5000));
+        POM.FirstPage f = new FirstPage();
+        f.scrollToTheBottom(BaseClass.getWebDriver());
+        assertEquals("RECOMMENDED ITEMS is displayes",true,BaseClass.getWebDriver().findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div[2]/h2")).isDisplayed());
+        POM.PLP p = new PLP();
+        if (!(BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"recommended-item-carousel\"]/div/div[1]/div[1]/div/div/div/a")).isDisplayed())) {
+            BaseClass.getWebDriver().findElement(By.xpath("//*[@id=\"recommended-item-carousel\"]/a[2]/i")).click();}
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"recommended-item-carousel\"]/div/div[1]/div[1]/div/div/div/a")));
+            p.clickAddToTheCart("//*[@id=\"recommended-item-carousel\"]/div/div[1]/div[1]/div/div/div/a");
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"cartModal\"]/div/div/div[3]/button")));
+            p.clickingViewCart();
+            assertEquals("Cart Page is opened","https://automationexercise.com/view_cart",BaseClass.getWebDriver().getCurrentUrl());
     }
 }
